@@ -7,10 +7,20 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
+  <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  </view> -->
+
+  <view class="weui-article__section">
+        <view class="weui-article__h3">Personal</view>
+        <view class="weui-article__p">
+               I wish I'd have someone like you, 
+            fresh and cool as the breeze in the valley, 
+            warm and sweet as the sunshine in an old town. 
+        </view>
   </view>
-  <button bindtap="getDeviceInfo">获取设备信息</button>
+
+  <button class="weui-btn" plain="" type="primary" bindtap="getDeviceInfo">获取设备信息</button>
   <view class="deviceInfo" wx:for="{{deviceInfo}}" wx:key="{{index}}" wx:if="{{show}}">
       <text class="device-info">{{index}}：{{item}}</text>
   </view>

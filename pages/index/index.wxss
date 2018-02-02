@@ -17,11 +17,21 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 20px;
 }
 
 .device-info{
   align-items: center;
   border: 1 solid ;
   border-radius: 50%;
+}
+
+.weui-article__section{
+  align-items: center;
+  margin: 5%;
+}
+
+.weui-article__h3{
+  align-content: center;
+  left: 5%;
 }

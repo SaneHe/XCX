@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello Sane',
+    motto: 'Sane',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -17,6 +17,14 @@ Page({
       url: '../logs/logs'
     })
   },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  },
+  
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

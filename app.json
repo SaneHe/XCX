@@ -2,10 +2,11 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/express/express"
+    "pages/express/express",
+    "pages/user/user"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"black",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Sane",
     "navigationBarTextStyle":"black"
@@ -18,15 +19,15 @@
       "selectedIconPath": "images/home-select.png",
       "text": "首页"
     }, {
-      "pagePath": "pages/logs/logs",
-      "iconPath": "images/log.png",
-      "selectedIconPath": "images/log-select.png",
-      "text": "日志"
-    }, {
       "pagePath": "pages/express/express",
-      "iconPath": "images/express.png",
-      "selectedIconPath": "images/express-select.png",
-      "text": "快递查询"
+      "iconPath": "images/ip.png",
+      "selectedIconPath": "images/ip-select.png",
+      "text": "IP地址查询"
+    }, {
+      "pagePath": "pages/user/user",
+      "iconPath": "images/user.png",
+      "selectedIconPath": "images/user-select.png",
+      "text": "用户中心"
     }]
   },
   "networkTimeout": {

@@ -95,6 +95,7 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
+        _this.setData({ focus: true })
         _this.setData({
           result: res.data.result,
           hide: true

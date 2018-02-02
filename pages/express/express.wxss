@@ -1,4 +1,5 @@
 /* pages/express/express.wxss */
+
 body{
   background-color: #E0EEE0;
 }
@@ -10,14 +11,10 @@ body{
   align-items: center;
 }
 
-input{
+.weui-input {
   border: 1px solid #E0EEEE;
-  width: 70%;
+  width: 95%;
   height: 48px;
   margin-top: 60%;
   margin: 10%;
-}
-
-button{
-  width:64px;
 }

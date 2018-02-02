@@ -1,8 +1,15 @@
 <!--pages/express/express.wxml-->
 <view class="section" bindtap="onFocus">
-  <input type="text" placeholder="请输入单号..." bindblur="bindKeyInput" focus="{{focus}}"  />
+
+  <view class="weui-cells__title">查询地址</view>
+  <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+          <input type="text" placeholder="请输入..." bindblur="bindKeyInput" focus="{{focus}}" class="weui-input" />
+      </view>
+  </view>
+
   <view class="btn-area">
-    <button form-type="submit" bindtap="expressIfno">查询</button>
+    <button class="weui-btn" type="primary" plain="true" form-type="submit" bindtap="expressIfno">查询</button>
   </view>
   <view wx:for="{{result}}" wx:key="{{index}}">
     <text wx:if="{{hide}}">{{index}}：{{item}}</text>
