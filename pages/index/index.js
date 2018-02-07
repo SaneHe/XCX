@@ -9,8 +9,10 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     deviceInfo: '',
-    show: false
+    show: false,
+    currentTime:''
   },
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
@@ -52,7 +54,24 @@ Page({
         }
       })
     }
-    //console.log(this.data.userInfo)
+    
+    var _this = this 
+    setInterval(function () {
+      var timestamp = Date.parse(new Date())
+      timestamp = timestamp / 1000
+      //获取当前时间  
+      var n = timestamp * 1000
+      var date = new Date(n)
+      var Y = date.getFullYear()
+      var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1)
+      var D = date.getDate() < 10 ? '0' + date.getDate() : date.getDate()
+      var h = date.getHours()
+      var m = date.getMinutes()
+      var s = date.getSeconds()
+      _this.setData({
+        currentTime: Y + ' ' + M + ' ' + D + ' ' + h + ":" + m + ":" + s
+      })
+    }, 1000)
   },
   getUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo

@@ -35,3 +35,13 @@
   align-content: center;
   left: 5%;
 }
+
+.weui-panel{
+  margin-top: 6%;
+}
+
+.weui-media-box__desc{
+  -webkit-line-clamp: 6;
+  line-height:16pt;  
+  letter-spacing: 0.1em;
+}

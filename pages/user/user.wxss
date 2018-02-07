@@ -1,3 +1,16 @@
-view{
-  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517575682781&di=12ebfa405fd06be9dec769a8b02720fa&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01a5d4565bd5046ac7253403807837.png") no-repeat;
+.page__hd{
+  align-content: center;
+  margin: 60rpx;
+}
+
+.page__title{
+  text-align: center;
+  margin: 20rpx;
+  margin-bottom: 40%;
+}
+
+.weui-btn{
+  width: 100px;
+  height: 40px;
+  margin-top: 15%;
 }
