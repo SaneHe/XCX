@@ -10,6 +10,7 @@
     "backgroundColor": "#FFE4C4",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Sane",
+    "iconPath":"images/ip.png",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {

@@ -1,12 +1,24 @@
+ page{
+     /* background: url("../../images/hands.jpg") no-repeat fixed top;  */
+} 
+
+.container_v{
+  align-content: center;
+  margin: 12rpx;
+  padding: 12rpx;
+}
+
 .page__hd{
   align-content: center;
-  margin: 60rpx;
+  margin: 20rpx;
 }
 
 .page__title{
   text-align: center;
   margin: 20rpx;
-  margin-bottom: 40%;
+  margin-bottom: 32%; 
+  font-size: 20pt;
+  letter-spacing: 32rpx;
 }
 
 .weui-btn{

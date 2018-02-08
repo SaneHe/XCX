@@ -28,6 +28,7 @@ Page({
   },
   
   onLoad: function () {
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -54,6 +55,15 @@ Page({
         }
       })
     }
+
+    wx.showLoading({
+      title: '加载中',
+      mask:true,
+    })
+
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 1000)
     
     var _this = this 
     setInterval(function () {
@@ -72,6 +82,19 @@ Page({
         currentTime: Y + ' ' + M + ' ' + D + ' ' + h + ":" + m + ":" + s
       })
     }, 1000)
+
+    if (!wx.getStorageSync('mobile') || wx.getStorageSync('mobile') == "") {
+        wx.switchTab({
+          url: '../user/user',
+          success: function(){
+            wx.showToast({
+              title: '请先登录',
+              icon: 'success',
+              duration: 2000
+            })
+          }
+        })
+    }
   },
   getUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo
