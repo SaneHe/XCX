@@ -83,7 +83,7 @@ Page({
       })
     }, 1000)
 
-    if (!wx.getStorageSync('mobile') || wx.getStorageSync('mobile') == "") {
+    if (!wx.getStorageSync('mobile') || wx.getStorageSync('mobile') == "" ) {
         wx.switchTab({
           url: '../user/user',
           success: function(){

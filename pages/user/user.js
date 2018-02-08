@@ -1,3 +1,5 @@
+const app = getApp()
+
 Page({
 
   /**
@@ -13,6 +15,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    
   },
 
   /**
@@ -70,7 +73,8 @@ Page({
       password: e.detail.value.password,
       verifycode: e.detail.value.verifycode
     })
-    var regMobile = /^1\d{10}$/;
+    let regMobile = /^1\d{10}$/;
+    app.globalData.bMobile = e.detail.value.mobile != '' ? true : false
     
     // var regMobile = /^[1][3,4,5,7,8][0-9]{9}$/;
     if (!regMobile.test(e.detail.value.mobile)) {

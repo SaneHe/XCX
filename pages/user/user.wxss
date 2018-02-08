@@ -1,5 +1,7 @@
  page{
      /* background: url("../../images/hands.jpg") no-repeat fixed top;  */
+     height: 100%;
+     width: 100%;
 } 
 
 .container_v{
@@ -25,4 +27,26 @@
   width: 100px;
   height: 40px;
   margin-top: 15%;
+  background-size: contain;
+}
+
+.warp{
+  height: 100%;
+}
+
+text{
+  position: absolute;
+  top:20%;
+  left:40%;
+  letter-spacing: 12pt;
+  font-weight: 600;
+  color: #999999;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+image{
+  height: 100%;
+  width: 100%;
+  background-size:100% 100%;
+  background-repeat:no-repeat fixed top;
 }
