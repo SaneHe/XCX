@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    userPage:true,
     mobile:'',
     password:'',
     verifycode:''
@@ -15,6 +16,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      userPage: app.globalData.bMobile
+    })
+
+    if( !this.data.userPage ){
+      console.log('ok')
+      if ( wx.hideTabBar ){
+        wx.hideTabBar({
+          aniamtion: true
+        })
+      }else{
+        wx.showModal({
+          title: '提示',
+          content: '当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试。'
+        })
+      }
+    }
     
   },
 
@@ -88,6 +106,10 @@ Page({
         })
         return false;
     }else{
+      this.setData({
+        userPage:false
+      })
+      
       wx.setStorageSync('mobile', e.detail.value.mobile)
         wx.switchTab({
           url: '../index/index'

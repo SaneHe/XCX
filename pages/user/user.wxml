@@ -1,4 +1,4 @@
-<view class="container_v" wx:if="{{ app.globalData.bMobile }}" >
+<view class="container_v" wx:if="{{userPage}}" >
      <view class="page__hd">
         <view class="page__title">登录</view>
     </view>
@@ -36,6 +36,7 @@
     <button formType='submit' class="weui-btn" type="default" plain="true">登录</button>
   </form>
 </view>
+
 <view class="warp" wx:else> 
      <text>欢迎你</text>
      <image src='../../images/hands.jpg'></image>

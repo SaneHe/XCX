@@ -1,7 +1,5 @@
 /**index.wxss**/
-page{
-  background: #203348;
-}
+
 
 .userinfo {
   display: flex;
@@ -21,7 +19,7 @@ page{
 }
 
 .usermotto {
-  margin-top: 20px;
+  margin-top: 20rpx;
 }
 
 .device-info{
@@ -46,6 +44,7 @@ page{
 
 .weui-media-box__desc{
   -webkit-line-clamp: 6;
+  color: black;
   line-height:16pt;  
   letter-spacing: 0.1em;
 }

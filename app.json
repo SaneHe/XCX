@@ -6,15 +6,15 @@
     "pages/user/user"
   ],
   "window":{
-    "backgroundTextStyle":"black",
-    "backgroundColor": "#203348",
-    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Sane",
+    "navigationBarBackgroundColor": "#FF4500",
     "iconPath":"images/ip.png",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
     "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "black",
     "list": [{
       "pagePath": "pages/index/index",
       "iconPath": "images/home.png",

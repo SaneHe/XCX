@@ -63,7 +63,7 @@ Page({
 
     setTimeout(function () {
       wx.hideLoading()
-    }, 1000)
+    }, 2000)
     
     var _this = this 
     setInterval(function () {
@@ -94,7 +94,10 @@ Page({
             })
           }
         })
+    }else{
+      app.globalData.bMobile = false
     }
+
   },
   getUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo
@@ -109,7 +112,7 @@ Page({
     })
     if (this.data.show ){
       try {
-        var res = wx.getSystemInfoSync()
+        let res = wx.getSystemInfoSync()
         this.setData({ deviceInfo: res })
 
       } catch (e) {
